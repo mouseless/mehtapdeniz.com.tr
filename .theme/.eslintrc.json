@@ -6,7 +6,9 @@
   },
   "extends": [
     "eslint:recommended",
-    "@nuxt/eslint-config"
+    "@nuxt/eslint-config",
+    "plugin:nuxt/recommended",
+    "plugin:vue/recommended"
   ],
   "overrides": [
     {
@@ -75,7 +77,8 @@
       "error",
       "always"
     ],
-    "vue/multi-word-component-names": "off"
+    "vue/multi-word-component-names": "off",
+    "vue/html-indent": "error"
   },
   "settings": {
     "json/ignore-files": [
