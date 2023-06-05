@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - 'issue/**'
+      - 'SeferMirza:issue/**'
 jobs:
   set-environment:
     name: Set Environment
