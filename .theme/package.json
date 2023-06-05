@@ -12,7 +12,6 @@
     "pregenerate": "npx cross-var npm run build --env=$npm_config_env",
     "generate": "npx cross-var nuxi generate --dotenv .env.$npm_config_env",
     "generate:production": "npm run generate --env=production",
-    "generate:staging": "npm run generate --env=staging",
     "postinstall": "npx nuxi prepare",
     "prelocal": "npm run generate --env=local",
     "local": "npx http-server .output/public -p 3000",

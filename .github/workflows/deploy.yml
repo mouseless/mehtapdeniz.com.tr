@@ -6,21 +6,6 @@ on:
       - main
       - 'epic/**'
 jobs:
-  set-environment:
-    name: Set Environment
-    runs-on: ubuntu-latest
-    outputs:
-      environment: ${{ steps.check-and-set.outputs.environment }}
-    steps:
-      - name: Check and Set
-        id: check-and-set
-        run: |
-          if [ "${{ github.repository_owner }}" == "gcbrains" ] ;
-            then
-              echo "environment=production" >> $GITHUB_OUTPUT
-          else
-            echo "environment=staging" >> $GITHUB_OUTPUT
-          fi
   generate:
     name: Generate
     runs-on: ubuntu-latest
@@ -37,7 +22,7 @@ jobs:
         run: |
           cd .theme
           npm install
-          npm run generate:${{ needs.set-environment.outputs.environment }}
+          npm run generate:production
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
