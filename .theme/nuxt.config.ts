@@ -1,16 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: process.env.BASE_URL,
-    head: {
-      link: [
-        {
-          rel: "stylesheet",
-          type: "text/css",
-          href: "https://mouseless.github.io/brand/assets/css/primary.css"
-        }
-      ]
-    }
+    baseURL: process.env.BASE_URL
   },
   modules: ["@nuxt/content"],
   dir: {
@@ -23,9 +14,19 @@ export default defineNuxtConfig({
       }
     }
   },
+  css: ["~/assets/scss/style.scss"],
   router: {
     options: {
       strict: true
+    }
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: "@import \"@/assets/scss/_variabls.scss\";"
+        }
+      }
     }
   }
 });

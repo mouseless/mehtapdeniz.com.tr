@@ -1,0 +1,55 @@
+// project specific variables
+$theme-color--default: #FA465B;
+$theme-color--two: #FDB5BD;
+$theme-color--three: #002FA6;
+$theme-color--black: #333333;
+$theme-color--green: #38cb89;
+$theme-color-sub--heading: #6d70a6;
+$transition--default: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+
+$font-family-name: 'Nunito', sans-serif;
+$heading-font-family-name: 'Nunito', sans-serif;
+$font-awesome-pro: 'Font Awesome 5 Free';
+$font-awesome: 'Font Awesome 5 Free';
+$font-awesome-brand: 'Font Awesome 5 Brands';
+
+// Colors ---------------
+$white: #ffffff;
+$black: #000000;
+
+// Body Text
+$body-text-color: #696969;
+$body-font-weight: 400;
+$body-line-height: 1.74;
+$body-font-size: 18px;
+$body-bg-color: $white;
+
+// Heading Text
+$heading-text-color: $theme-color--black;
+$heading-font-weight: 700;
+$heading-text-two: $theme-color--two;
+$heading-text-default: $theme-color--default;
+
+// Other Colors
+$primary:       #004395;
+$secondary:     #f9c322;
+$success:       #28a745;
+$info:          #17a2b8;
+$warning:       #ffc107;
+$danger:        #dc3545;
+$light:         #f8f9fa;
+
+// Social Color
+$s8tracks: #122D4B;
+
+// Responsive Variables
+$xl-device : 'only screen and (min-width: 1500px) and (max-width: 1599px)';
+$laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1499px)';
+$desktop-device : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$tablet-device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$large-mobile:'only screen and (max-width: 767px)';
+$small-mobile: 'only screen and (max-width: 575px)';
+$extra-small-mobile: 'only screen and (max-width: 479px)';
