@@ -7,7 +7,7 @@
   </div>
 </template>
 <script setup>
-import { useRoute, onMounted } from "#imports";
+import { useRoute, onMounted, navigateTo } from "#imports";
 
 const route = useRoute();
 const trailingSlash = route.path !== "/" && route.path.endsWith("/");

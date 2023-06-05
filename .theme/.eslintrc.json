@@ -6,9 +6,9 @@
   },
   "extends": [
     "eslint:recommended",
-    "@nuxt/eslint-config",
     "plugin:nuxt/recommended",
-    "plugin:vue/recommended"
+    "plugin:vue/recommended",
+    "@nuxtjs/eslint-config-typescript"
   ],
   "overrides": [
     {
@@ -29,14 +29,15 @@
       "error",
       "as-needed"
     ],
-    "indent": [
-      "error",
-      2
-    ],
     "@typescript-eslint/indent": [
       "error",
       2
     ],
+    "indent": [
+      "error",
+      2
+    ],
+    "vue/html-indent": "error",
     "linebreak-style": [
       "error",
       "unix"
@@ -63,9 +64,9 @@
         }
       }
     ],
-    "space-before-function-paren": "off",
     "no-multi-spaces": "error",
     "no-multiple-empty-lines": "error",
+    "no-return-assign": "off",
     "no-trailing-spaces": "error",
     "no-var": "error",
     "prefer-const": "error",
@@ -77,8 +78,12 @@
       "error",
       "always"
     ],
+    "space-before-function-paren": "off",
     "vue/multi-word-component-names": "off",
-    "vue/html-indent": "error"
+    "vue/html-quotes": [
+      "error",
+      "double"
+    ]
   },
   "settings": {
     "json/ignore-files": [
