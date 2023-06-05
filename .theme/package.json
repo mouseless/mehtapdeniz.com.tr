@@ -1,15 +1,31 @@
 {
-  "name": "nuxt-app",
+  "name": "mehtapdeniz.com.tr",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "prebuild": "npm run preparation",
+    "build": "npx nuxi build",
+    "predev": "npm run preparation",
+    "dev": "npx nuxi dev --dotenv .env.local",
+    "predev:build": "npm run build --env=local",
+    "dev:build": "npx nuxi dev --dotenv .env.local",
+    "pregenerate": "npx cross-var npm run build --env=$npm_config_env",
+    "generate": "npx cross-var nuxi generate --dotenv .env.$npm_config_env",
+    "generate:production": "npm run generate --env=production",
+    "generate:staging": "npm run generate --env=staging",
+    "postinstall": "npx nuxi prepare",
+    "prelocal": "npm run generate --env=local",
+    "local": "npx http-server .output/public -p 3000",
+    "preparation": "npx eslint . && npx cross-var node -r dotenv/config prebuild dotenv_config_path=.env.$npm_config_env"
   },
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^9.3.0",
+    "@nuxt/content": "^2.6.0",
+    "@nuxt/eslint-config": "^0.1.1",
     "@types/node": "^18",
-    "nuxt": "^3.5.2"
+    "dotenv": "^16.0.3",
+    "eslint-plugin-json-format": "^2.0.1",
+    "nuxt": "^3.5.2",
+    "typescript": "^5.1.3"
   }
 }

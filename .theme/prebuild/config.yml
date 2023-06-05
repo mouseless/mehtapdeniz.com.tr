@@ -1,0 +1,44 @@
+# Project root relative to this config file
+projectRoot: ../../
+
+# Log settings
+log:
+  debug: false # Enable debug logs
+  quiet: false # Disable logs completely
+
+# Tasks to run in given order
+tasks:
+  - clean:
+      directories:
+        - ./.theme/.public
+        - ./.theme/.temp
+        - ./.theme/content
+  - touch:
+      path: ./.theme/.env.local
+
+  # Copy images to .public
+  - copy:
+      extension: .png
+      source: ./
+      target: ./.theme/.public
+  - copy:
+      extension: .jpg
+      source: ./
+      target: ./.theme/.public
+  # Copy all files in public to .public
+  - copy:
+      source: ./.theme/public
+      target: ./.theme/.public
+
+  # Extract diagrams
+  - extractDiagrams:
+      source: ./
+      target: ./.theme/.temp
+  - move:
+      extension: .png
+      source: ./.theme/.temp
+      target: ./.theme/.public
+  - move:
+      extension: .md
+      source: ./.theme/.temp
+      target: ./.theme/content
