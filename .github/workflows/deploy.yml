@@ -1,10 +1,10 @@
 name: deploy
 
 on:
-  push:
+  pull_request:
     branches:
       - main
-      - 'SeferMirza:issue/**'
+      - 'epic/**'
 jobs:
   set-environment:
     name: Set Environment
