@@ -60,7 +60,7 @@ başvuran yabancı uyrukluların yaptırmaları gereken sağlık sigortasıdır.
 ## Seyahat Sağlık Sigortası
 
 Seyahat Sağlık Sigortası; yurt içine, yurt dışına veya yurt dışından Türkiye’ye
-seyahat edenleri, seyahatleri esnasında karşıla- şabilecekleri ani rahatsızlık
+seyahat edenleri, seyahatleri esnasında karşılaşabilecekleri ani rahatsızlık
 ve hastalıklarda koruma altına alan ve asistans hizmetleriyle de seyahati
 kolaylaştıran bir sigortadır.
 

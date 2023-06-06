@@ -1,6 +1,6 @@
 ---
 title: Kimiz
-position: 3
+position: 4
 og:
   image: bu sayfa için open graph image path'i buraya
   description: bu sayfa için open graph description buraya
