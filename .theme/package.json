@@ -28,6 +28,8 @@
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.9.0",
     "nuxt": "^3.5.2",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
     "typescript": "^5.1.3"
   }
 }
