@@ -1,5 +1,5 @@
 ---
-title: Corporate
+title: Kurumsal
 position: 3
 og:
   image: bu sayfa için open graph image path'i buraya
