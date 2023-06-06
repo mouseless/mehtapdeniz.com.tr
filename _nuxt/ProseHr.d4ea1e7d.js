@@ -1,0 +1,1 @@
+import{i as e,o,a as s,b as t}from"./entry.bfa13e1e.js";const c={},n={class:"container"},r=t("hr",null,null,-1),a=[r];function _(i,l){return o(),s("div",n,a)}const f=e(c,[["render",_]]);export{f as default};
