@@ -10,4 +10,12 @@ links:
 copyright: Copyright text buraya.
 ---
 
-Adres vb. içerik buraya gelecek
+19 Mayıs Mahallesi
+
+Şemsettin Günaltay Caddesi
+
+Morkaya İş Merkezi
+
+No:113, D:6, Kat:2
+
+34734 Kadıköy/İstanbul

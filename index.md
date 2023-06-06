@@ -24,5 +24,3 @@ Hayat boyu sigorta, burada
 Website of Mehtap Deniz Sigorta
 
 Ana sayfa açıklaması
-
-go to [page 1](page1.md)
