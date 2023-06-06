@@ -32,6 +32,10 @@ export default defineNuxtConfig({
   dir: {
     public: ".public"
   },
+  components: {
+    global: true,
+    dirs: ["~/components"]
+  },
   content: {
     markdown: {
       remarkPlugins: {
