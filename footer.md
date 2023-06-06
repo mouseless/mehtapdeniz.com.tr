@@ -7,7 +7,7 @@ links:
         to: page1.md
       - text: page 2
         to: page2.md
-copyright: 2023 GC Brains. All Rights Reserved.
+copyright: Copyright text buraya.
 ---
 
 Adres vb. içerik buraya gelecek

@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.BASE_URL,
     head: {
-      title: "Methap Deniz",
+      title: "Mehtap Deniz Sigorta",
       meta: [
         { charset: "utf-8" }
       ],
