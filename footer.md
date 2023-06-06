@@ -10,4 +10,4 @@ links:
 copyright: 2023 GC Brains. All Rights Reserved.
 ---
 
-footer
+Adres vb. içerik buraya gelecek

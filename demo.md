@@ -2,7 +2,7 @@
 title: Demo
 og:
   title: title
-  image: -images/home-banner.png
+  image: image path
   description: description
 ---
 
@@ -12,11 +12,11 @@ og:
 
 ::banner
 ---
-img: -images/home-banner.png
+img: http://mehtapdeniz.com.tr/element/img_main_01.jpg
 ---
-better,
+Hayat boyu,
 
-__together__
+__sigorta__
 ::
 
 ### Box Image
@@ -24,7 +24,7 @@ __together__
 ::box-image
 ---
 title: Demo
-img: -images/home-banner.png
+img: http://mehtapdeniz.com.tr/element/img_main_01.jpg
 link:
   text: Learn More
   to: demo.md
@@ -37,7 +37,7 @@ Lorem ipsum dolor sit amet
 ::box-image-large
 ---
 title: Demo
-img: -images/home-banner.png
+img: http://mehtapdeniz.com.tr/element/img_main_01.jpg
 link:
   text: Learn More
   to: demo.md
@@ -132,7 +132,7 @@ columns
 ### A
 
 - [internal](demo.md)
-- [external](https://github.com/gcbrains)
+- [external](http://mehtapdeniz.com.tr/)
 
 ### Blockquote
 

@@ -2,8 +2,8 @@
 title: Page 1
 position: 2
 og:
-  image: -images
-  description: Page 1
+  image: bu sayfa için open graph image path'i buraya
+  description: bu sayfa için open graph description buraya
 ---
 
 # Page 1
