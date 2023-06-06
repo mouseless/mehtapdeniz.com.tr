@@ -15,6 +15,15 @@ export default defineNuxtConfig({
     }
   },
   css: ["~/assets/scss/style.scss"],
+  runtimeConfig: {
+    public: {
+      content: {
+        anchorLinks: {
+          depth: 0
+        }
+      }
+    }
+  },
   router: {
     options: {
       strict: true
