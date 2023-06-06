@@ -12,4 +12,4 @@ Doğa Sigorta Hasar İhbar Hattı: 0850 811 51 00
 
 Anadolu Sigorta Hasar İhbar Ve İletişim Hattı: 0850 724 08 50
 
-Mehtap Deniz Sigorta Acenteliği Whatsapp İletişim Hattı:
+Mehtap Deniz Sigorta Acenteliği Whatsapp İletişim Hattı: !!!Whatsapp iconu ve linkli!!!
