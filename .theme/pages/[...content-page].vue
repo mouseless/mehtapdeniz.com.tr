@@ -1,9 +1,10 @@
 <template>
   <div>
-    <ContentDoc
-      v-if="!trailingSlash"
-      :head="false"
-    />
+    <ContentDoc v-if="!trailingSlash" :head="false">
+      <template #not-found>
+        <ContentDoc path="/not-found" :head="false" />
+      </template>
+    </ContentDoc>
   </div>
 </template>
 <script setup>
