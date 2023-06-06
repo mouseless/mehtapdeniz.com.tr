@@ -3,7 +3,7 @@
     <div class="header-area header-area--absolute">
       <div
         class="header-bottom-wrap header-sticky"
-        :class="{ 'is-sticky': addSticky }"
+        :class="{ 'is-sticky':addSticky }"
       >
         <div class="container">
           <div class="row">
@@ -11,13 +11,22 @@
               <div class="header position-relative">
                 <div class="header__logo">
                   <NuxtLink to="/">
-                    <img src="/mds-logo.png" height="80" alt="" />
+                    <img
+                      src="/mds-logo.png"
+                      height="80"
+                      class="light-logo"
+                      alt=""
+                    >
+                    <img
+                      src="/mds-logo.png"
+                      height="48"
+                      class="dark-logo"
+                      alt=""
+                    >
                   </NuxtLink>
                 </div>
                 <div class="header-right">
-                  <div
-                    class="header__navigation menu-style-four d-none d-xl-block"
-                  >
+                  <div class="header__navigation menu-style-four d-none d-xl-block">
                     <nav class="navigation-menu">
                       <ul>
                         <li>
@@ -25,36 +34,22 @@
                             Home
                           </NuxtLink>
                         </li>
-                        <li>
-                          <NuxtLink to="/bireysel">
-                            Bireysel
-                          </NuxtLink>
-                        </li>
-                        <li>
-                          <NuxtLink to="/kurumsal">
-                            Kurumsal
-                          </NuxtLink>
-                        </li>
-                        <li>
-                          <NuxtLink to="/hizmetler">
-                            Hizmetler
-                          </NuxtLink>
-                        </li>
-                        <li>
-                          <NuxtLink to="/blog">
-                            Blog
-                          </NuxtLink>
-                        </li>
-                        <li>
-                          <NuxtLink to="/kimiz">
-                            Kimiz
-                          </NuxtLink>
-                        </li>
-                        <li>
-                          <NuxtLink to="/iletisim">
-                            İletişim
-                          </NuxtLink>
-                        </li>
+                        <ContentQuery
+                          v-slot="{ data: menus }"
+                          path="/"
+                          :only="[ '_path', 'title', 'position' ]"
+                          :where="{ _dir: { $eq: '' }, _path: { $and: [ { $ne: '/footer'}, { $ne:'/' } ] }, position: { $gt: 0 } }"
+                          :sort="{ position: 1, $numeric: true }"
+                        >
+                          <li
+                            v-for="menu in menus"
+                            :key="menu.title"
+                          >
+                            <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
+                              {{ menu.title }}
+                            </NuxtLink>
+                          </li>
+                        </ContentQuery>
                       </ul>
                     </nav>
                   </div>
@@ -75,7 +70,7 @@
     <div
       id="mobile-menu-overlay"
       class="mobile-menu-overlay"
-      :class="{ active: mobileMenuActive }"
+      :class="{ 'active':mobileMenuActive }"
       @click="hideMobileMenu"
     >
       <div class="mobile-menu-overlay__inner">
@@ -90,7 +85,7 @@
                       src="/mds-logo.png"
                       class="img-fluid"
                       alt=""
-                    />
+                    >
                   </NuxtLink>
                 </div>
               </div>
@@ -115,36 +110,22 @@
                   Home
                 </NuxtLink>
               </li>
-              <li>
-                <NuxtLink to="/bireysel">
-                  Bireysel
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/kurumsal">
-                  Kurumsal
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/hizmetler">
-                  Hizmetler
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/blog">
-                  Blog
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/kimiz">
-                  Kimiz
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/iletisim">
-                  İletişim
-                </NuxtLink>
-              </li>
+              <ContentQuery
+                v-slot="{ data: menus }"
+                path="/"
+                :only="[ '_path', 'title', 'position' ]"
+                :where="{ _dir: { $eq: '' }, _path: { $and: [ { $ne: '/footer'}, { $ne:'/' } ] }, position: { $gt: 0 } }"
+                :sort="{ position: 1, $numeric: true }"
+              >
+                <li
+                  v-for="menu in menus"
+                  :key="menu.title"
+                >
+                  <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
+                    {{ menu.title }}
+                  </NuxtLink>
+                </li>
+              </ContentQuery>
             </ul>
           </nav>
         </div>
