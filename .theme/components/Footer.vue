@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer-area-wrapper bg-black section-space--mt_60">
+  <footer class="footer-area-wrapper bg-theme-default section-space--mt_60">
     <ContentQuery
       v-slot="{ data: footer }"
       path="/"
@@ -14,7 +14,7 @@
               <div class="footer-widget__logo mb-30">
                 <NuxtLink href="/">
                   <img
-                    src="/mds-light-logo.png"
+                    src="/mds-white-logo.png"
                     width="160"
                     height="48"
                     class="img-fluid"
@@ -100,6 +100,10 @@ body > div {
     &__title a {
       font-size: 18px;
       font-weight: 700;
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
     }
     &__list {
       li {
@@ -107,7 +111,7 @@ body > div {
         a {
           color: $white;
           &:hover {
-            color: $theme-color--default;
+            text-decoration: underline;
           }
         }
         & .sublink__text {

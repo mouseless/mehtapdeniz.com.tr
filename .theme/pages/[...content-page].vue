@@ -78,3 +78,8 @@ function limit(text, length) {
     : `${text}.`;
 }
 </script>
+<style scoped>
+body {
+  scroll-margin: 5px;
+}
+</style>
