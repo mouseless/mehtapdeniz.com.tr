@@ -40,10 +40,10 @@
               </h6>
               <ul class="footer-widget__list">
                 <li v-for="sublink in link?.sublinks" :key="sublink.to">
-                  <ContentLink :to="sublink.to" v-if="sublink.to">
+                  <ContentLink v-if="sublink.to" :to="sublink.to">
                     {{ sublink.text }}
                   </ContentLink>
-                  <div class="sublink__text-without__to" v-else>
+                  <div v-else class="sublink__text-without__to">
                     {{ sublink.text }}
                   </div>
                 </li>

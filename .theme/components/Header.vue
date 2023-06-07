@@ -31,7 +31,7 @@
                       <ul>
                         <li>
                           <NuxtLink to="/">
-                            Home
+                            Ana Sayfa
                           </NuxtLink>
                         </li>
                         <ContentQuery
