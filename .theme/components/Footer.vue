@@ -10,11 +10,11 @@
       <div class="footer-area section-space--ptb_60">
         <div class="container">
           <div class="row footer-widget-wrapper">
-            <div class="col-lg-6 col-md-6 footer-widget">
+            <div class="col-lg-4 col-md-4 footer-widget">
               <div class="footer-widget__logo mb-30">
                 <NuxtLink href="/">
                   <img
-                    src="/mds-logo.png"
+                    src="/mds-light-logo.png"
                     width="160"
                     height="48"
                     class="img-fluid"
@@ -43,7 +43,7 @@
                   <ContentLink :to="sublink.to" v-if="sublink.to">
                     {{ sublink.text }}
                   </ContentLink>
-                  <div v-else>
+                  <div class="sublink__text-without__to" v-else>
                     {{ sublink.text }}
                   </div>
                 </li>
@@ -108,6 +108,11 @@ body > div {
           color: $white;
           &:hover {
             color: $theme-color--default;
+          }
+        }
+        & .sublink__text {
+          &-without__to {
+            color: $white
           }
         }
       }

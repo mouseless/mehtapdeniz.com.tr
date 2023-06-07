@@ -1,45 +1,37 @@
 ---
 links:
   - text: Kimiz
-    to: about.md
+    to: kimiz.md
     sublinks:
       - text: Mehtap Deniz
-        to: contact.md
+        to: iletisim.md
   - text: Bireysel
-    to: personal.md
+    to: bireysel.md
     sublinks:
       - text: Trafik Sigortası
-        to: personal#trafik-sigortası
+        to: bireysel#trafik-sigortası
       - text: Kasko Sigortası
-        to: personal#kasko-sigortası
+        to: bireysel#kasko-sigortası
       - text: Yeşil Kart Sigortası
-        to: personal#yeşil-kart-sigortası
+        to: bireysel#yeşil-kart-sigortası
       - text: Konut Sigortası
-        to: personal#konut-sigortası
+        to: bireysel#konut-sigortası
       - text: Daha Fazla...
-        to: personal.md
+        to: bireysel.md
   - text: Kurumsal
-    to: corporate.md
+    to: kurumsal.md
     sublinks:
       - text: İşyeri Sigortası
-        to: corporate#işyeri-sigortası
+        to: kurumsal#işyeri-sigortası
       - text: Sektörel Paket Sigortalar
-        to: corporate#sektörel-paket-sigortalar
+        to: kurumsal#sektörel-paket-sigortalar
       - text: Endüstriyel Sigortalar
-        to: corporate#endüstriyel-sigortalar
+        to: kurumsal#endüstriyel-sigortalar
       - text: Mühendislik Sigortalar
-        to: corporate#mühendislik-sigortalar
+        to: kurumsal#mühendislik-sigortalar
       - text: Daha Fazla...
-        to: personal.md
-copyright: Copyright text buraya.
+        to: bireysel.md
+  - text: İletişim
+    to: iletisim.md
+copyright: 2023 Mehtap Deniz Sigorta. Tüm hakları saklıdır.
 ---
-
-19 Mayıs Mahallesi
-
-Şemsettin Günaltay Caddesi
-
-Morkaya İş Merkezi
-
-No:113, D:6, Kat:2
-
-34734 Kadıköy/İstanbul
