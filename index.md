@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Ana Sayfa
 position: 1
 og:
   image: bu sayfa için open graph image path'i buraya
@@ -24,5 +24,3 @@ Hayat boyu sigorta, burada
 Website of Mehtap Deniz Sigorta
 
 Ana sayfa açıklaması
-
-go to [page 1](page1.md)

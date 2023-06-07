@@ -28,10 +28,6 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ["@nuxt/content"],
-  dir: {
-    public: ".public"
-  },
   components: {
     global: true,
     dirs: ["~/components"]
@@ -44,8 +40,18 @@ export default defineNuxtConfig({
     }
   },
   css: ["~/assets/scss/style.scss"],
+  dir: {
+    public: ".public"
+  },
+  generate: {
+    routes: ["/not-found"]
+  },
+  modules: ["@nuxt/content"],
   runtimeConfig: {
     public: {
+      protocol: process.env.PROTOCOL,
+      authority: process.env.AUTHORITY,
+      baseUrl: process.env.BASE_URL,
       content: {
         anchorLinks: {
           depth: 0

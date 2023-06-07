@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer-area-wrapper bg-black section-space--mt_60">
+  <footer class="footer-area-wrapper bg-theme-default section-space--mt_60">
     <ContentQuery
       v-slot="{ data: footer }"
       path="/"
@@ -10,11 +10,11 @@
       <div class="footer-area section-space--ptb_60">
         <div class="container">
           <div class="row footer-widget-wrapper">
-            <div class="col-lg-6 col-md-6 footer-widget">
+            <div class="col-lg-4 col-md-4 footer-widget">
               <div class="footer-widget__logo mb-30">
                 <NuxtLink href="/">
                   <img
-                    src="/mds-logo.png"
+                    src="/mds-white-logo.png"
                     width="160"
                     height="48"
                     class="img-fluid"
@@ -40,9 +40,12 @@
               </h6>
               <ul class="footer-widget__list">
                 <li v-for="sublink in link?.sublinks" :key="sublink.to">
-                  <ContentLink :to="sublink.to">
+                  <ContentLink v-if="sublink.to" :to="sublink.to">
                     {{ sublink.text }}
                   </ContentLink>
+                  <div v-else class="sublink__text-without__to">
+                    {{ sublink.text }}
+                  </div>
                 </li>
               </ul>
             </div>
@@ -97,6 +100,10 @@ body > div {
     &__title a {
       font-size: 18px;
       font-weight: 700;
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
     }
     &__list {
       li {
@@ -104,7 +111,12 @@ body > div {
         a {
           color: $white;
           &:hover {
-            color: $theme-color--default;
+            text-decoration: underline;
+          }
+        }
+        & .sublink__text {
+          &-without__to {
+            color: $white
           }
         }
       }
