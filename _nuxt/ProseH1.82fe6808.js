@@ -1,1 +1,0 @@
-import{i as t,o,a as _,b as a,r as c}from"./entry.bfa13e1e.js";const d={class:"container"},n=["id"],r={__name:"ProseH1",props:{id:{type:String,default:null}},setup(e){return(s,i)=>(o(),_("div",d,[a("h1",{id:e.id},[c(s.$slots,"default",{},void 0,!0)],8,n)]))}},p=t(r,[["__scopeId","data-v-0ecc8dfe"]]);export{p as default};

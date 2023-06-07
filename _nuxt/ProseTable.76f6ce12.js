@@ -1,0 +1,1 @@
+import{i as s,o as t,a,b as o,r as n}from"./entry.8b9e45bf.js";const _={},r={class:"container"};function c(e,l){return t(),a("div",r,[o("table",null,[n(e.$slots,"default",{},void 0,!0)])])}const f=s(_,[["render",c],["__scopeId","data-v-2729f424"]]);export{f as default};
