@@ -1,0 +1,1 @@
+import{i as s,o as t,a as o,b as a,r as _}from"./entry.de22b90f.js";const c={},n={class:"container"},r={class:"automatic-numbered-list"};function d(e,l){return t(),o("div",n,[a("ol",r,[_(e.$slots,"default",{},void 0,!0)])])}const u=s(c,[["render",d],["__scopeId","data-v-173b22de"]]);export{u as default};
