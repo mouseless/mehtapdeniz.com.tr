@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Ana Sayfa
 position: 1
 og:
   image: bu sayfa için open graph image path'i buraya
