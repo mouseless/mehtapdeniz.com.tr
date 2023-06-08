@@ -8,7 +8,7 @@ export default defineNuxtModule({
     nuxt.options.nitro.externals.inline.push(resolve("./transformers"));
     // @ts-ignore
     nuxt.hook("content:context", contentContext => {
-      contentContext.transformers.push(resolve("./transformers/optimus-prime.ts"));
+      contentContext.transformers.push(resolve("./transformers/transformer.ts"));
     });
   }
 });
