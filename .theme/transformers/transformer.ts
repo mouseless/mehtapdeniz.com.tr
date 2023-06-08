@@ -21,13 +21,13 @@ export default defineTransformer({
   name: "learn-transformer",
   extensions: [".md"],
   transform (content: any) {
-    const elements: Array<object> = content.body.children.filter((f: any) => proseComponents[f.tag]);
+    const elements: Array<object> = content.body.children;
 
-    if(elements.length <= 0) {
+    if(elements.filter((f: any) => proseComponents[f.tag]).length <= 0) {
       return content;
     }
 
-    elements.forEach((value: object) => {
+    elements.filter((f: any) => proseComponents[f.tag]).forEach((value: object) => {
       const divElement = {
         type: "element",
         tag: "div",
@@ -37,8 +37,7 @@ export default defineTransformer({
         children: [value]
       };
 
-      const index = content.body.children.findIndex((obj: any) => obj === value);
-      content.body.children[index] = divElement;
+      elements[elements.findIndex((obj: any) => obj === value)] = divElement;
     });
 
     return content;
