@@ -1,9 +1,7 @@
 <template>
-  <div class="container">
-    <ol class="automatic-numbered-list">
-      <slot />
-    </ol>
-  </div>
+  <ol class="automatic-numbered-list">
+    <slot />
+  </ol>
 </template>
 <style lang="scss" scoped>
 ol {

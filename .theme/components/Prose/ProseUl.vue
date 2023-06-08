@@ -1,7 +1,5 @@
 <template>
-  <div class="container">
-    <ul class="circle-list">
-      <slot />
-    </ul>
-  </div>
+  <ul class="circle-list">
+    <slot />
+  </ul>
 </template>

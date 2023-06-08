@@ -1,9 +1,7 @@
 <template>
-  <div class="container">
-    <li class="list-item">
-      <slot />
-    </li>
-  </div>
+  <li class="list-item">
+    <slot />
+  </li>
 </template>
 <style lang="scss" scoped>
 .circle-list {
