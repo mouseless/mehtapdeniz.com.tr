@@ -1,3 +1,6 @@
+import { defineNuxtConfig } from "nuxt/config";
+import TransformerModule from "./transformers/transformer-module";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -46,7 +49,11 @@ export default defineNuxtConfig({
   generate: {
     routes: ["/not-found"]
   },
-  modules: ["@nuxt/content"],
+  modules: [
+    // @ts-ignore
+    TransformerModule,
+    "@nuxt/content"
+  ],
   runtimeConfig: {
     public: {
       protocol: process.env.PROTOCOL,

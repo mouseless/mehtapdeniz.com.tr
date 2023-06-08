@@ -19,7 +19,7 @@
                     height="48"
                     class="img-fluid"
                     alt=""
-                  />
+                  >
                 </NuxtLink>
               </div>
               <ContentRenderer :value="footer">

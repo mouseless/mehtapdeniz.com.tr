@@ -1,13 +1,11 @@
 <template>
-  <div class="container">
-    <img
-      class="img-fluid"
-      :src="src"
-      :alt="alt"
-      :width="width"
-      :height="height"
-    >
-  </div>
+  <img
+    class="img-fluid"
+    :src="src"
+    :alt="alt"
+    :width="width"
+    :height="height"
+  >
 </template>
 
 <script setup>

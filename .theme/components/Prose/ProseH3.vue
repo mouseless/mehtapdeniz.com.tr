@@ -1,9 +1,7 @@
 <template>
-  <div class="container">
-    <h3 :id="id">
-      <slot />
-    </h3>
-  </div>
+  <h3 :id="id">
+    <slot />
+  </h3>
 </template>
 <script setup>
 defineProps({
