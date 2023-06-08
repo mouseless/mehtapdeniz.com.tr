@@ -22,18 +22,18 @@ export default defineTransformer({
   extensions: [".md"],
   transform (content: any) {
     content.body.children.forEach((value: any, index: number) => {
-      if(proseComponents[value.tag]) {
-        const divElement = {
-          type: "element",
-          tag: "div",
-          props: {
-            class: "container"
-          },
-          children: [value]
-        };
+      if(!proseComponents[value.tag]) { return; }
 
-        content.body.children[index] = divElement;
-      }
+      const divElement = {
+        type: "element",
+        tag: "div",
+        props: {
+          class: "container"
+        },
+        children: [value]
+      };
+
+      content.body.children[index] = divElement;
     });
 
     return content;
