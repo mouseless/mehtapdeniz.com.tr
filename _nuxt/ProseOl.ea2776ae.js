@@ -1,0 +1,1 @@
+import{i as s,o as t,a as o,r as _}from"./entry.1f9c1e10.js";const c={},n={class:"automatic-numbered-list"};function r(e,a){return t(),o("ol",n,[_(e.$slots,"default",{},void 0,!0)])}const d=s(c,[["render",r],["__scopeId","data-v-bc66b0e9"]]);export{d as default};
