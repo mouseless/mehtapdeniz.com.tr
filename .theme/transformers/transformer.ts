@@ -21,23 +21,19 @@ export default defineTransformer({
   name: "learn-transformer",
   extensions: [".md"],
   transform (content: any) {
-    const elements: Array<object> = content.body.children;
+    content.body.children.forEach((value: any, index: number) => {
+      if(proseComponents[value.tag]) {
+        const divElement = {
+          type: "element",
+          tag: "div",
+          props: {
+            class: "container"
+          },
+          children: [value]
+        };
 
-    if(elements.filter((f: any) => proseComponents[f.tag]).length <= 0) {
-      return content;
-    }
-
-    elements.filter((f: any) => proseComponents[f.tag]).forEach((value: object) => {
-      const divElement = {
-        type: "element",
-        tag: "div",
-        props: {
-          class: "container"
-        },
-        children: [value]
-      };
-
-      elements[elements.findIndex((obj: any) => obj === value)] = divElement;
+        content.body.children[index] = divElement;
+      }
     });
 
     return content;
