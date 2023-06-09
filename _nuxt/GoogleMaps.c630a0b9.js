@@ -1,2 +1,0 @@
-import{e as a,v as r,o as s,a as n,b as t,u as c}from"./entry.0568463b.js";const l={class:"container"},i=["src"],u=a({__name:"GoogleMaps",props:{location:{}},setup(p){const e=r().public.googleApiKey;return(o,d)=>(s(),n("div",l,[t("iframe",{width:"600",height:"450",style:{border:"0"},loading:"lazy",allowfullscreen:"",referrerpolicy:"no-referrer-when-downgrade",src:`https://www.google.com/maps/embed/v1/place?key=${c(e)}
-        &q=${o.location}`},null,8,i)]))}});export{u as default};

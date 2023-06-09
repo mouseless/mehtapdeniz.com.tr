@@ -1,0 +1,1 @@
+import{i as s,o as t,a as o,r as _}from"./entry.78fd44d8.js";const a={},n={class:"list-item"};function r(e,c){return t(),o("li",n,[_(e.$slots,"default",{},void 0,!0)])}const i=s(a,[["render",r],["__scopeId","data-v-244fa9a1"]]);export{i as default};
