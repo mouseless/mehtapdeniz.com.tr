@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: |
           cd .theme
-          echo GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} >> .env.production
+          echo -e GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} >> .env.production
           npm install
           npm run generate:production
       - name: Upload Artifacts
