@@ -28,4 +28,8 @@ GSM: +90 535 762 79 02
 
 !!!Whatsapp iconu ve linkli!!!
 
-!!!Google map buraya gelecek!!!
+::google-maps
+---
+location: Mehtap+Deniz+Sigorta+Acenteliği,Kadıköy+İstanbul
+---
+::

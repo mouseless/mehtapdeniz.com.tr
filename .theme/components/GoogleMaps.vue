@@ -1,23 +1,19 @@
 <template>
   <div class="container">
     <iframe
-      width="600"
+      width="100%"
       height="450"
       style="border:0"
       loading="lazy"
       allowfullscreen
       referrerpolicy="no-referrer-when-downgrade"
-      :src="`https://www.google.com/maps/embed/v1/place?key=${apiKey}
+      :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyB7lTJemOq0YQVgKAPnFtDE4ZMTUChQT6A
         &q=${location}`"
     />
   </div>
 </template>
 <script setup lang="ts">
-import { useRuntimeConfig } from "#imports";
-
 defineProps<{
   location: { type: String, default: "" }
 }>();
-
-const apiKey = useRuntimeConfig().public.googleApiKey;
 </script>
