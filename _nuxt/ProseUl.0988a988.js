@@ -1,0 +1,1 @@
+import{i as s,o,a as r,r as t}from"./entry.0568463b.js";const c={},a={class:"circle-list"};function l(e,n){return o(),r("ul",a,[t(e.$slots,"default")])}const f=s(c,[["render",l]]);export{f as default};
