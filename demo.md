@@ -119,7 +119,7 @@ columns
 
 ### Google Map
 
-::google-map
+::google-maps
 ---
 location: Mehtap+Deniz+Sigorta+Acenteliği,Kadıköy+İstanbul
 ---
