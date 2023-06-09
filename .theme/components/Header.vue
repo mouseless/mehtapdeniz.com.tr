@@ -29,7 +29,7 @@
                   <div class="header__navigation menu-style-four d-none d-xl-block">
                     <nav class="navigation-menu">
                       <ul>
-                        <li>
+                        <li :class="{ active: '/' === root }">
                           <NuxtLink to="/">
                             Ana Sayfa
                           </NuxtLink>
@@ -44,6 +44,7 @@
                           <li
                             v-for="menu in menus"
                             :key="menu.title"
+                            :class="{ active: menu._path === root }"
                           >
                             <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
                               {{ menu.title }}
@@ -107,7 +108,7 @@
             <ul>
               <li>
                 <NuxtLink to="/">
-                  Home
+                  Ana Sayfa
                 </NuxtLink>
               </li>
               <ContentQuery
@@ -134,7 +135,10 @@
   </header>
 </template>
 <script setup>
-import { ref, onBeforeMount } from "#imports";
+import { ref, onBeforeMount, useRoute } from "#imports";
+
+const route = useRoute();
+const root = computed(() => `/${route.path.split("/")[1]}`);
 
 const mobileMenuActive = ref(false);
 const addSticky = ref(false);

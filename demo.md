@@ -117,6 +117,14 @@ beautiful
 columns
 ::
 
+### Google Map
+
+::google-maps
+---
+location: Mehtap+Deniz+Sigorta+Acenteliği,Kadıköy+İstanbul
+---
+::
+
 ## Content
 
 # H1
