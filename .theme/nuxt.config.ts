@@ -59,7 +59,6 @@ export default defineNuxtConfig({
       protocol: process.env.PROTOCOL,
       authority: process.env.AUTHORITY,
       baseUrl: process.env.BASE_URL,
-      googleApiKey: process.env.GOOGLE_API_KEY,
       content: {
         anchorLinks: {
           depth: 0
